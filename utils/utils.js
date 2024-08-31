@@ -8,7 +8,6 @@ let Utils = {
         });
       },
       generateRefreshToken: (userId) => {
-      console.log("gene", userId, typeof userId);
         return jwt.sign({ id: userId }, process.env.JWT_REFRESH_SECRET, {
           expiresIn: process.env.JWT_REFRESH_EXPIRES_IN,
         });

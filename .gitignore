@@ -1,6 +1,7 @@
 #Files
 .env
 package-lock.json
+.DS_Store
 
 #Folders
 node_modules
