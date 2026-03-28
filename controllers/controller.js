@@ -40,6 +40,9 @@ let Controller = {
         } catch (error) {
             res.status(403).json({ message: 'Invalid refresh token', error: error.message });
         }
+    },
+    health: async (req, res) => {
+        res.status(200).json({ message: 'online'});
     }
 }
 
